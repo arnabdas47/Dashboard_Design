@@ -1,0 +1,487 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100i,200,400,500,800&display=swap");
+.slider {
+  position: fixed;
+  font-family: Montserrat;
+  height: 100vh;
+  top: 10%;
+  left: -78%;
+  background: #fdfdfd;
+  width: 75vw;
+  -webkit-transition: .5s !important;
+  transition: .5s !important;
+  z-index: 10;
+}
+
+.slider i {
+  position: relative;
+  top: 10px !important;
+  left: 10%;
+  font-size: 2.5rem !important;
+  color: #2a2a2a;
+  z-index: 100;
+}
+
+.slider .container {
+  position: relative;
+  top: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slider .container .img {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  margin: 10px;
+  background-image: url(../img/Stunning-Digital-Art-Paintings-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.slider .container h1 {
+  font-weight: 500;
+}
+
+.slider .container h4 {
+  position: relative;
+  top: -40px;
+  font-weight: 400;
+}
+
+.slider .container .slideNav {
+  position: relative;
+  top: -10vh !important;
+  left: -3%;
+  list-style: none;
+  text-align: left !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 70%;
+}
+
+.slider .container .slideNav hr {
+  height: 1px;
+  background: rgba(138, 138, 138, 0.205);
+  width: 100%;
+}
+
+.slider .container .slideNav li {
+  padding: 3px 8px;
+  margin: 5px;
+  -webkit-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.075);
+  font-weight: 500;
+}
+
+.slider .container .slideNav li div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  vertical-align: middle;
+}
+
+.slider .container .slideNav li div span i {
+  position: relative;
+  top: 5px !important;
+  left: -5px !important;
+  font-size: 20px !important;
+  float: left;
+}
+
+.slider .container .slideNav li div .no {
+  position: relative;
+  left: 10%;
+  background: #d465d4;
+  padding: 4px 17px;
+  float: right;
+  border-radius: 20px;
+  color: white;
+}
+
+.slider .container .slideNav li:hover {
+  background: #e1e9ff;
+}
+
+.slider .container .slideNav li:hover i {
+  color: #096ed3;
+}
+
+.search_open {
+  -webkit-transition: .5s !important;
+  transition: .5s !important;
+  -webkit-transform-origin: right !important;
+          transform-origin: right !important;
+  z-index: 10 !important;
+  width: 160px !important;
+  left: 55% !important;
+  transition: .5s !important;
+  opacity: 1 !important;
+}
+
+.search_open1 {
+  position: absolute;
+  z-index: 100 !important;
+  position: absolute;
+  top: 50%;
+  left: 39.5%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: .5s !important;
+  transition: .5s !important;
+}
+
+.open {
+  left: 0%;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.fade {
+  opacity: 1 !important;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.fade1 {
+  -webkit-transition: .5s;
+  transition: .5s;
+  opacity: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: #ededff;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  background: white;
+  padding: 5px 0;
+  -webkit-box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.061);
+          box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.061);
+}
+
+nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+nav ul li .cross {
+  position: absolute;
+  left: 10%;
+  top: 25%;
+  font-size: 2rem !important;
+  opacity: 0;
+}
+
+nav ul li i {
+  font-size: 1.4rem !important;
+  padding-right: 1.3rem;
+  color: #333333;
+  cursor: pointer;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+nav ul li img {
+  height: 1.3rem;
+}
+
+nav ul li .input {
+  position: absolute;
+  top: 50%;
+  left: 90%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border: none;
+  border: 1px solid #9c9c9c;
+  border-radius: 30px;
+  padding: 4px 4px 4px 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  opacity: 0;
+  z-index: -9;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.body {
+  position: relative;
+  top: 14vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.body .card {
+  font-family: Montserrat;
+  width: 300px;
+  height: 350px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: white;
+  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.123);
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.123);
+  margin: 15px;
+}
+
+.body .card .img {
+  -webkit-box-flex: .7;
+      -ms-flex: .7;
+          flex: .7;
+  background-image: url(../img/MICROSOFT.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.body .card .info {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+}
+
+.body .card .info h2 {
+  color: #222222;
+}
+
+.body .card .info h4 {
+  font-style: italic;
+  font-weight: 600;
+  color: #666666;
+}
+
+.body .card .info h4 span {
+  color: #146bc3;
+  cursor: pointer;
+}
+
+.body .card .info ul {
+  font-style: italic;
+  color: #3a3a3a;
+  font-weight: bold;
+  width: 70%;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.body .card .info ul li:nth-child(3) img {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+}
+
+.body .card .info ul li:nth-child(3) div {
+  height: 35px;
+  width: 35px;
+  background: black;
+  border-radius: 50%;
+  background-image: url(../img/adult-beard-boy-casual-220453.jpg);
+  background-size: cover;
+}
+
+.body .card .info ul li:nth-child(2) img {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+}
+
+.body .card .info ul li:nth-child(2) div {
+  height: 35px;
+  width: 35px;
+  background: black;
+  border-radius: 50%;
+  background-image: url(../img/Stunning-Digital-Art-Paintings-1.jpg);
+  background-size: cover;
+}
+
+@media all and (min-width: 800px) {
+  body {
+    padding: 0 !important;
+    margin: 0;
+  }
+  nav .mobNav {
+    display: none;
+  }
+  nav .input {
+    display: none;
+  }
+  nav .search_icon {
+    display: none;
+  }
+  nav .search_icon1 {
+    display: block !important;
+  }
+  .body {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 70%;
+    float: right;
+  }
+  .slider {
+    position: fixed;
+    top: 5vh;
+    left: 0%;
+    width: 30%;
+    height: 100vh;
+    background: #ededff;
+  }
+  .slider i {
+    position: relative;
+    top: 10px !important;
+    left: 10%;
+    font-size: 2.5rem !important;
+    color: #2a2a2a;
+    z-index: 100;
+  }
+  .slider .container {
+    position: relative;
+    top: 5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .slider .container .img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    margin: 10px;
+    background-image: url(../img/Stunning-Digital-Art-Paintings-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .slider .container h1 {
+    font-weight: 500;
+  }
+  .slider .container h4 {
+    position: relative;
+    top: -40px;
+    font-weight: 400;
+  }
+  .slider .container .slideNav {
+    position: relative;
+    top: -5vh !important;
+    left: -3%;
+    list-style: none;
+    text-align: left !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 70%;
+  }
+  .slider .container .slideNav hr {
+    height: 1px;
+    background: rgba(138, 138, 138, 0.205);
+    width: 100%;
+  }
+  .slider .container .slideNav li {
+    padding: 3px 8px;
+    margin: 5px;
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.075);
+            box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.075);
+    font-weight: 500;
+  }
+  .slider .container .slideNav li div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    vertical-align: middle;
+  }
+  .slider .container .slideNav li div span i {
+    position: relative;
+    top: 5px !important;
+    left: -5px !important;
+    font-size: 20px !important;
+    float: left;
+  }
+  .slider .container .slideNav li:hover {
+    background: #e1e9ff;
+  }
+  .slider .container .slideNav li:hover i {
+    color: #096ed3;
+  }
+}
+/*# sourceMappingURL=main.css.map */
